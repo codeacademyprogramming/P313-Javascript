@@ -71,6 +71,16 @@ console.log(C);
 console.log('P313');
 
 
+var t;
+let c; //declaration
+
+var x = 10; // declaration & assignment
+
+c = 3;
+
+t = c;//assignment
+
+
 
 
 
