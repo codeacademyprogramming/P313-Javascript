@@ -180,9 +180,59 @@ Floor
 
 toFixed()*/
 
+for(let i=1;i<10;i++)
 
 console.log('qiymet: ', value2);
 console.log('tipi:', typeof value2);
+
+// value++; //
+// ++value; //
+
+// let x = value++;
+// let y = ++value;
+
+// let a = 1;
+// a++;
+
+// a+=4;
+// a=a+4;
+
+// a-=1;
+// a%=10;
+
+// // let a= 4;  // 4 byte
+// let t = '';
+// let a= 0;     // 4byte
+// a=null;       // 0 byte
+
+// // let a = '';//
+
+// // let b = null;
+
+
+let a  = 5;
+
+let _a =  String(a);
+let _a2 =  a.toString(2);
+
+let b = '12.5';
+
+let _b = parseInt(b); // tam hissesin verir   ==12
+let _b = Number(b);  // 12.5
+
+let c = true;
+let _c = String(c);
+let _c2 = c.toString();
+
+
+// .toFixed(0)
+
+
+
+
+
+
+
 
 
 
