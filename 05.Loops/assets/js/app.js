@@ -131,11 +131,23 @@ butun cut ededlerin hasilini tapmaq
 
 */
 
+// let a=1;
+// let b=0;
+
+// if(b!=0)
+// a/b
+
 for (let i = 1; i <= 5; i++) {
     hasil = hasil * i;
 }
 
 console.log(hasil);
+
+
+do {
+let pwd = 11;
+}
+while(1==2)
 
 
 
