@@ -23,6 +23,10 @@ for (let index = 0; index < Math.ceil(arr.length / 2); index++) {
         polindrom = false;
         break;
     }
+    // if (arr[index] == arr[index+1]) {
+    //     polindrom = false;
+    //     break;
+    // }
 
     //magic string
     // console.log('arr[' + index + ']=' + arr[index]);
