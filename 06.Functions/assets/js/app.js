@@ -1,13 +1,13 @@
 function myPrint() {
     let a = 3;//function scope
     console.log(`function scope-deki a: ${a} | before`);
-// let a=13; error olacaq
+    // let a=13; error olacaq
 
     if (true) {
         let a = 13;
         console.log(`block scope-deki a: ${a}`);
     }
-    
+
     console.log(`function scope-deki a: ${a} | after`);
 }
 
@@ -32,7 +32,7 @@ console.log(`global scopdaki a: ${a}  | after`);
 //block scope
 
 while (1 != 1) {
-//block scope
+    //block scope
 }
 
 if (1 == 1) {
