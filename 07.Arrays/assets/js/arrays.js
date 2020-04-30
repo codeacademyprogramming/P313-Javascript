@@ -144,7 +144,6 @@ return false;
  while dovr operatorundan istifade etmekle massivden elementlerin ilk elementden
  sonuncu elemente dogru ardicil console-vasitesi ile cap edilmesi.
 
-
  [11,32,12,56]
  11
  32
@@ -182,7 +181,9 @@ return false;
 // let _3cuelement = b1[2];
 // console.log(_3cuelement);
 
+let b1 = [1, 2, 3, 4];
 // for (let i = b1.length - 1; i >= 0; i--) {
 //     console.log(b1[i]);
 // }
+
 
