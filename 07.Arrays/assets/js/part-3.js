@@ -107,5 +107,5 @@ let joined = fruilts.join(',');
 
 console.log(joined);
 
-[2, 3, 4]  |  [4, 3, 2]
+// [2, 3, 4]  |  [4, 3, 2]
 

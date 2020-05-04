@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="time" style="color:orange;text-align: center;font-size:5rem">04.05.2020 15:05:25</h2>
+    <button type="button" id="btnStop">
+        Stop
+    </button>
+
+    <hr>
+    <p>
+        <h3>4.Tapşırıq</h3><br>
+        -Time Ago<br>
+        algoritminin qurulması<br>
+
+        bir tarix verilir input parameter kimi<br>
+
+        misal ucun : <kbd>05.05.2020 22:12:00</kbd>
+
+        Eger indiki tarixle verilmiş tarix arasındakı fərq<br>
+        <ul>
+            <li>3-saniyədən azdırsa: ====> biraz əvvəl</li>
+            <li>1 dəqiqədən azdırsa: ====> x saniyə əvvəl</li>
+            <li>1 saatdan azdırsa : ====> x dəqəqə əvvəl</li>
+            <li>5 saatdan azdırsa: ====> x saat əvvəl</li>
+            <li>5 saatdan coxdursa günün saatı: ====> 22:00</li>
+            <li>1 gün və daha coxdursa: ====> tarix yazılsın 2020.05.05 22:12:00</li>
+        </ul>
+
+        İndi saat 05.05.2020 10:00:22 - dir
+
+
+        <pre>
+            <b>və timeAgo adli funksiyama '05.05.2020 10:00:20' tarixini gonderirem</b>
+            let result= timeAgo('05.05.2020 10:00:20');
+            console.log(result);   //netice: biraz əvvəl
+        </pre>
+        <pre>
+            <b>və timeAgo adli funksiyama '05.05.2020 10:00:00' tarixini gonderirem</b>
+            let result= timeAgo('05.05.2020 10:00:00');
+            console.log(result);   //netice: 22 saniyə əvvəl
+        </pre>
+        <pre>
+            <b>və timeAgo adli funksiyama '05.05.2020 09:55:00' tarixini gonderirem</b>
+            let result= timeAgo('05.05.2020 09:55:00');
+            console.log(result);   //netice: 22 saniyə əvvəl
+        </pre>
+    </p>
+
+    <script src="assets/js/callbacks.js"></script>
+</body>
+
+</html>
