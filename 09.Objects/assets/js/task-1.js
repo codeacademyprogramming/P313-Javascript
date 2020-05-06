@@ -21,3 +21,25 @@ Samsung Galaxy A30s DS (SM-A307) 64GB White (999)
 let now = new Date();
 let endYear = now.getFullYear();
 let beginYear = endYear - 2;
+
+
+
+
+
+let genders = [{
+    id: 1,
+    name: 'Kişi',
+    nameEn: 'Male'
+},
+{
+    id: 2,
+    name: 'Qadın',
+    nameEn: 'Female'
+}];
+
+
+let person1 = {
+    name: 'Filankes',
+    gender: genders[0]
+
+};
