@@ -34,6 +34,7 @@ function Course(name, duration, price, schedule, perTimeDuration) {
     this.price = price;
     this.schedule = schedule;
     this.perTimeDuration = perTimeDuration;
+    this.operationTime= new Date()//operationTime;
 
     this.fullInfo = function () {
         return `${this.name} ${this.duration} (${this.price})`;
