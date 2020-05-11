@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body *:not(p) {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid red;
+        }
+
+        #rza {
+            background-color: teal;
+
+        }
+
+        .cavanshir {
+            border: 2px solid teal;
+        }
+
+        /* [name="resul"] > #kamil{
+
+        } */
+    </style>
+</head>
+
+<body>
+    <span>2020</span>
+    <span>05</span>
+    <span>11</span>
+
+    <span>23</span>
+    <span>10</span>
+    <span>05</span>
+    <!--
+        saniye eger tek reqemdirse
+        il-in rengi teal olsun (eks halda yigishdirilsin style)
+
+        saniye eger cut reqemdirse 
+        gun bold olsun (eks halda yigishdirilsin style)
+
+        saniye eger son reqemi 3-e bolunurse
+        saniyenin ozu underline style alsin(eks halda yigishdirilsin style)
+    -->
+
+    <button id="btnDemo">
+        Demo
+    </button>
+    <a href="#" id="goToGoogle">
+       Go to google
+    </a>
+    <div class="container mx-3" id="lazim">
+        <p>Lazim</p>
+        <div class="row" id="ilahe">
+            <p>ilahe</p>
+            <div class="col" id="metleb">
+                <p>metleb</p>
+                <div class="form-control" id="rza">rza</div>
+                <div class="form-control" id="ilhame">ilhame</div>
+            </div>
+            <div class="col" id="arzu">
+                <p>arzu</p>
+                <div class="form-control cavanshir">
+                    cavansir
+                </div>
+                <div class="form-control cavanshir" style="color:teal">
+                    cavansir2
+                </div>
+            </div>
+        </div>
+        <div class="row" name="resul">
+            <p>Resul</p>
+            <div class="col" id="aqil">
+                <p>aqil</p>
+                <div class="form-control" id="sevil">Sevil</div>
+            </div>
+            <div class="col" id="kamil">
+                <p>kamil</p>
+                <div class="form-control" id="sevil">vaqif</div>
+            </div>
+            <div class="col" id="nise">
+                <p>nise</p>
+                <div class="form-control" id="sevil">Ramal</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/workingStyles.js"></script>
+</body>
+
+</html>
