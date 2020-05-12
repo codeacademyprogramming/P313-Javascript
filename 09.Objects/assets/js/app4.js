@@ -35,6 +35,10 @@ let p2 = {
 // });
 
 
+// let btn = document.querySelectorAll('.toggle-button');
+// let btn = document.querySelector('.navbar .toggle-button');
+// let btn = document.querySelector('.navbar > .toogle-button');
+
 
 //PascalCase
 function Person(name, surname) {
