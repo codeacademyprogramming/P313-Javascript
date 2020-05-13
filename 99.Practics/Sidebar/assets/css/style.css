@@ -1,0 +1,49 @@
+.sidebar * {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.my-nav-menu li {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.my-nav-menu li::before {
+    content: '\f067';
+}
+
+.my-nav-menu li.active::before {
+    content: '\f068';
+}
+
+.sidebar {
+    position: fixed;
+    width: 350px;
+    background-color: teal;
+    top: 0;
+    /* left: 0; */
+    bottom: 0;
+    left: -350px
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    outline: none!important;
+    /* border: none; */
+    /* right: 0!important;
+    position: relative; */
+}
+
+.sidebar:not(.show) .toggle-button {
+    right: -30px;
+    position: relative;
+}
