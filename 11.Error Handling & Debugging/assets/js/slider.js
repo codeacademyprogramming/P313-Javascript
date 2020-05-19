@@ -62,7 +62,7 @@ prev.addEventListener('click', function (e) {
 
     if (nextSlide == null) {
         let slideCount = document.querySelectorAll('#slider1 .slide').length;
-        nextSlide = slider1.children[slideCount - 1];
+        nextSlide = slider1.children[slideCount];
     }
 
     topla(3, 4)

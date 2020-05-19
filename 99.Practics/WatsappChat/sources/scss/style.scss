@@ -1,0 +1,163 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.chat-frame {
+    width: 400px;
+    margin: 10px;
+    background-color: #e0e0e0;
+
+    .chat-header {
+        padding: 12px;
+        height: 60px;
+        background-color: #065e52;
+        color: #ffffff;
+
+        .chat-back {
+            font-size: 14pt;
+            color: #ffffff;
+        }
+
+        .user {
+            .photo {
+                width: 45px;
+                height: 45px;
+                border-radius: 100%;
+                overflow: hidden;
+                margin: 0 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .buttons {
+            li {
+                margin-right: 25px;
+                font-size: 14pt;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .chat-body {
+        overflow-y: auto;
+
+        .messages {
+            padding: 5px 25px;
+            min-height: 500px;
+            height: 500px;
+            background-color: #e0e0e0;
+            overflow-y: auto;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 4px;
+                }
+
+                div {
+                    display: inline-block;
+                    padding: 6px;
+                    border-radius: 10px;
+                    background-color: #ffffff;
+                    position: relative;
+                    text-align: justify;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        border-style: solid;
+                        position: absolute;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                    }
+                }
+
+                &:not(.me) {
+                    margin-right: 25px;
+
+                    div {
+                        border-top-left-radius: 0;
+
+                        &::before {
+                            left: -10px;
+                            border-width: 0 10px 10px 0;
+                            border-color: transparent #ffffff transparent transparent;
+                        }
+                    }
+                }
+
+                &.me {
+                    margin-left: 25px;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    div {
+                        background-color: #dcf8c6;
+                        border-top-right-radius: 0;
+
+                        &::before {
+                            right: -10px;
+                            border-width: 10px 10px 0 0;
+                            border-color: #dcf8c6 transparent transparent transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .chat-footer {
+        padding: 5px;
+
+        .controls {
+            a {
+                font-size: 20pt;
+                color: #c1c1c1;
+            }
+
+            .chat-input {
+                border-radius: 25px;
+                padding: 2px 12px;
+                background-color: #ffffff;
+                margin-right: 15px;
+
+                &>*:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                &>.text-message {
+                    height: 40px;
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    outline: none !important;
+                }
+            }
+
+            .send {
+                background-color: teal;
+                color: #ffffff;
+                display: inline-block;
+                width: 48px;
+                height: 42px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
