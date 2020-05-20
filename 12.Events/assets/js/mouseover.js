@@ -24,6 +24,7 @@ let box = document.querySelector('.box-hovered');
 box.addEventListener('mouseover', showInfo);
 
 
+//e: EventArgs
 function showInfo(e) {
     console.log(`x:${e.screenX},y:${e.screenY}`);
 }
