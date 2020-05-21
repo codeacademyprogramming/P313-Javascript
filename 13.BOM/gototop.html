@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/1154e1d6ee.js" crossorigin="anonymous"></script>
+
+    <style>
+        section {
+            height: 400px;
+            padding: 80px 0;
+        }
+
+        #home {
+            background-color: teal;
+
+        }
+
+        #services {
+            background-color: orange;
+
+        }
+
+        #about {
+            background-color: pink;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .go-top {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000c8;
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            position: fixed;
+            right: 20px;
+            /* bottom: 20px; */
+            bottom: -120px;
+
+            transition: bottom 0.2s;
+        }
+
+        .go-top.show {
+            bottom: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#" class="go-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <section id="home">
+
+    </section>
+
+    <section id="services">
+
+    </section>
+
+    <section id="about">
+
+    </section>
+
+
+
+    <script src="assets/js/gototop.js"></script>
+</body>
+
+</html>
