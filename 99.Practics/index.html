@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="demo">
+        Demo
+    </button>
+
+    <script>
+        // [1, 2, 3].forEach((el, index) => {
+
+        //     console.log(el, index);
+
+
+        // });
+
+
+        // [1, 2, 3].forEach(function(el, index){
+
+        //     console.log(el, index);
+
+
+        // });
+
+
+        let a = 3;
+
+        // const fnx = function (el, index) {
+
+        //     console.log(el, index);
+        // };
+
+        // const fnx = (el, index) =>{
+
+        //     console.log(el, index);
+        // };
+
+        const fnx = el => {
+
+            console.log(el);
+        };
+
+
+        // [1, 2, 3].forEach(fnx);
+
+
+        let number = 10;
+
+        //function scope
+        const foo = (n) => {
+            n = n * 10;
+            console.log(n);
+
+        }
+
+        //function scope
+        function test(n) {
+            n = n * 10;
+            console.log(n);
+        }
+
+        // foo(3);
+
+        // console.log(n);
+
+
+        // const p = 3.14;
+        // p = 12;
+
+        // const t = {
+        //     name: 'MyName',
+        //     age: 20
+        // }
+
+        // console.log(t);
+        // t.age = 21;
+        // t.name = 'Test';
+
+        // t.surname = 'app';
+
+        // console.log(t);
+
+
+
+        let demo = document.querySelector('#demo');
+
+        // demo.onclick = function (e) {
+
+        //     console.log('Ilk Funksiya');
+        // };
+
+        // demo.onclick = function (e) {
+
+        //     console.log('ikinci Funksiya');
+        // };
+
+        // demo.addEventListener('click',function (e) {
+
+        //     console.log('Ilk Funksiya');
+        // });
+        // demo.addEventListener('click',function (e) {
+
+        //     console.log('ikinci Funksiya');
+        // });
+
+        function elems(name) {
+            this.name = name;
+        }
+
+        let xTest = new elems('Test');
+        console.log(xTest);
+    </script>
+</body>
+
+</html>
