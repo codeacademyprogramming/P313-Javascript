@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-  
+
   var regExpMask = IMask(
     document.getElementById('phone'),
     {
@@ -10,7 +10,10 @@ $(document).ready(function () {
     });
 
 
-  // $(".slider").slick();
+  $(".slider").slick({
+    dots: true,
+    
+  });
 
 
 });
