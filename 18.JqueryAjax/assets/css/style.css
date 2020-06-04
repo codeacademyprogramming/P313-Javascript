@@ -1,0 +1,63 @@
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    width: 80px;
+    border-radius: 100% !important;
+    background-color: #0000008c !important;
+    color: #ffffff;
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-prev {
+    left: 20px;
+}
+
+.owl-next {
+    right: 20px;
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+}
+
+.loader.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.square {
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+    animation-name: loader;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 1s;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+}

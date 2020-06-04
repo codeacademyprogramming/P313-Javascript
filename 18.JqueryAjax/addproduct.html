@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <form class="card" id="product">
+                    <div class="card-header">
+                        Yeni məhsul əlavə etmək
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="title">Adi</label>
+                            <input type="text" class="form-control" id="title" name="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Qiymət</label>
+                            <input type="text" class="form-control" id="price" name="price">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Qeyd</label>
+                            <input type="text" class="form-control" id="description" name="description">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success">
+                            Əlavə et
+                        </button>
+                        <button class="btn btn-primary" type="reset">
+                            Təmizlə
+                        </button>
+                        <a href="index.html" class="btn btn-warning">
+                            Geri qayıt
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="assets/js/addproduct.js"></script>
+</body>
+
+</html>
